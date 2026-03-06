@@ -1,1 +1,2 @@
 # Employee-Department-Analytics
+Built a relational database for employees, departments, jobs, and locations, then applied advanced SQL queries to uncover insights such as salary distributions, department staffing, and city‑wise workforce allocation. Leveraged joins, subqueries, and conditional logic to answer business‑driven questions like identifying top performers, commission structures, and department growth trends.
