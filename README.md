@@ -60,6 +60,14 @@ CREATE TABLE EMPLOYEE (
   DEPARTMENT_ID INT FOREIGN KEY REFERENCES DEPARTMENT(DEPARTMENT_ID)
 );
 
+- Overview: “This repo contains a sample employee database schema for practicing SQL joins, constraints, and queries.”
+- Setup Instructions: “Run the provided SQL scripts to create tables and insert sample data.”
+- Learning Goals: “Use this schema to practice SELECT queries, INNER JOINs, GROUP BY, and aggregate functions.”
+- Next Steps: “Extend the schema with new tables like PROJECT or BONUS to simulate real-world HR systems.”
+
+
+
+
 INSERT INTO EMPLOYEE VALUES
 (7369,'SMITH','JOHN','Q',667,7902,'17-DEC-84',800,NULL,20),
 (7499,'ALLEN','KEVIN','J',670,7698,'20-FEB-84',1600,300,30),
