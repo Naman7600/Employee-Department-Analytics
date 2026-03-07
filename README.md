@@ -3,40 +3,37 @@ Built a relational database for employees, departments, jobs, and locations, the
 
 This project demonstrates a simple relational database schema with LOCATION, DEPARTMENT, JOB, and EMPLOYEE tables. It’s a classic setup for practicing SQL joins, constraints, and queries.
 
-Location Table :
 
+--Location Table :
 CREATE TABLE LOCATION (
   Location_ID INT PRIMARY KEY,
   City VARCHAR(50)
 );
-
 INSERT INTO LOCATION (Location_ID, City)
 VALUES (122, 'New York'),
        (123, 'Dallas'),
        (124, 'Chicago'),
        (167, 'Boston');
 
-Department Table :
-
+--Department Table :
 CREATE TABLE DEPARTMENT (
   Department_Id INT PRIMARY KEY,
   Name VARCHAR(50),
   Location_Id INT,
   FOREIGN KEY (Location_Id) REFERENCES LOCATION(Location_ID)
 );
-
 INSERT INTO DEPARTMENT (Department_Id, Name, Location_Id)
 VALUES (10, 'Accounting', 122),
        (20, 'Sales', 124),
        (30, 'Research', 123),
        (40, 'Operations', 167);
 
-Job Table :
+
+--Job Table :
 CREATE TABLE JOB (
   Job_ID INT PRIMARY KEY,
   Designation VARCHAR(50)
 );
-
 INSERT INTO JOB VALUES
 (667, 'CLERK'),
 (668, 'STAFF'),
@@ -46,7 +43,7 @@ INSERT INTO JOB VALUES
 (672, 'PRESIDENT');
 
 
-Employee Table :
+--Employee Table :
 CREATE TABLE EMPLOYEE (
   EMPLOYEE_ID INT,
   LAST_NAME VARCHAR(20),
